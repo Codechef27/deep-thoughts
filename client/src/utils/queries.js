@@ -17,6 +17,7 @@ export const QUERY_THOUGHTS = gql`
     }
   }
 `;
+
 export const QUERY_THOUGHT = gql`
   query thought($id: ID!) {
     thought(_id: $id) {
@@ -56,7 +57,7 @@ export const QUERY_USER = gql`
   }
 `;
 
-export const QUERY_PROFILE = gql`
+export const QUERY_ME = gql`
   {
     me {
       _id
@@ -83,7 +84,7 @@ export const QUERY_PROFILE = gql`
   }
 `;
 
-export const QUERY_PROFILE_BASIC = gql`
+export const QUERY_ME_BASIC = gql`
   {
     me {
       _id
